@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    color: aquamarine;
+}
+h3{text-align: center;
+  font-size: xx-large;
+}
+P{
+  text-align: center;
+font: size 54px; 
+}
+.main{
+  display: flex;
+}
+.DIV{
+  display: flex;
+}
