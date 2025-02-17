@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local</title>
+</head>
+<body>
+    <input id="uname" type="text" placeholder="username" />
+    <button onclick="saveusername()">save</button>
+    <script>
+function saveusername(){
+        var uname= document.getElementById("uname").value
+        localStorage.setItem("username",uname)
+  }
+        </script>
+</body>
+</html>
