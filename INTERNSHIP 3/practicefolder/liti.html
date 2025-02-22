@@ -40,8 +40,8 @@
             document.getElementById("student-data").innerHTML =
                 listOfStudents.map((student, i) =>
                     `<div style="box-shadow: 1px 1px 5px 1px gray;
-    padding: 20px;margin: 20px;">
-    <button onclick="deleteStudent(${i})">Delete</button>
+             padding: 20px;margin: 20px;">
+            <button onclick="deleteStudent(${i})">Delete</button>
                     <h1>Username: ${student.username}</h1>
             <h1> Email ID: ${student.emailid}</h1>
             <h1> Full Name: ${student.fullname}</h1>
@@ -50,7 +50,7 @@
         }
         function deleteStudent(index){
             var modifiedList = listOfStudents.splice(index, 1)
-            localStorage.setItem("students", JSON.stringify(modifiedList))
+            localStorage.setItem("students", JSON.stringify(listOfStudents))
             showStudentData()
         }
     </script>
